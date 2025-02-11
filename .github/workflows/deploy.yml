@@ -19,6 +19,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/ubuntu/fastapi-app
+            cd /home/ubuntu/Crawling_server
             git pull origin main
             docker-compose up -d --build
